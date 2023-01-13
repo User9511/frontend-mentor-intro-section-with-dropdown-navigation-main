@@ -12,8 +12,11 @@
   --step--4: clamp(0.32rem, calc(0.73rem + -0.46vw), 0.62rem);
   --step--3: clamp(0.42rem, calc(0.8rem + -0.42vw), 0.7rem);
   --step--2: clamp(0.56rem, calc(0.87rem + -0.34vw), 0.79rem);
+  /* step--1 */
   --step--1: clamp(0.95rem, calc(0.94rem + -0.21vw), 0.89rem);
+  /* step-0 */
   --step-0: clamp(1rem, calc(1rem + 0vw), 1rem);
+  /* step-1 */
   --step-1: clamp(1.13rem, calc(1.05rem + 0.31vw), 1.33rem);
   --step-2: clamp(1.27rem, calc(1.09rem + 0.77vw), 1.78rem);
   --step-3: clamp(1.42rem, calc(1.09rem + 1.42vw), 2.37rem);
@@ -94,8 +97,10 @@ nav {
   gap: 1rem;
 }
 
+button:hover,
 a:hover {
   color: var(--Almost-Black);
+  transition: 0.2s ease-in-out;
 }
 
 .nav-links {
@@ -130,8 +135,10 @@ a:hover {
   text-align: center;
 }
 
-/* Arrow Icon */
-.nav-links > li > img {
+/* Arrow Icon  */
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
 }
 
 .dropdown-list {

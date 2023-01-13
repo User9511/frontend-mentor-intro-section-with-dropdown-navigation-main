@@ -33,9 +33,13 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: "Epilogue", sans-serif;
+  color: var(--Medium-Gray);
+  font-size: var(--step-0);
   outline: none;
   border: none;
+  background: transparent;
+  cursor: pointer;
 }
 p,
 h1,
