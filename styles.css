@@ -62,12 +62,22 @@ header {
   color: var(--Medium-Gray);
 }
 
-.menu-icon {
+.menu-icon,
+.menu-icon-close {
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
   padding: var(--space-s);
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: block;
+}
+
+.menu-icon-close {
+  display: none;
 }
 
 nav {
@@ -240,6 +250,13 @@ a:hover {
 
   .nav-links > li {
     cursor: pointer;
+  }
+
+  .dropdown-features,
+  .dropdown-company {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
 
   /* Arrow Icon */
