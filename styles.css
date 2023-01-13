@@ -151,6 +151,21 @@ a:hover {
   gap: 0.5rem;
 }
 
+#features,
+#company {
+  display: flex;
+  align-items: center;
+}
+
+.features-list,
+.company-list {
+  display: none;
+}
+
+.dropdown-list.show-dropdown {
+  display: block;
+}
+
 .icon {
   width: 1rem;
   height: 1rem;
@@ -263,6 +278,15 @@ a:hover {
   .dropdown-list li {
     display: flex;
     gap: 0.5rem;
+  }
+
+  .features-list,
+  .company-list {
+    display: none;
+  }
+
+  .dropdown-list.show-dropdown {
+    display: block;
   }
 
   .icon {
