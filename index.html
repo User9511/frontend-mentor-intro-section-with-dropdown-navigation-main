@@ -13,13 +13,13 @@
     <!-- Header -->
     <header>
       <img src="./images/logo.svg" alt="snap" class="logo" />
-      <img src="./images/icon-menu.svg" alt="" class="menu-icon" />
-      <img src="./images/icon-close-menu.svg" alt="" class="menu-icon-close" />
+      <img src="./images/icon-menu.svg" alt="" class="menu-icon" tabindex="0" role="button" />
+      <img src="./images/icon-close-menu.svg" alt="" class="menu-icon-close" tabindex="0" role="button" />
 
       <nav>
         <ul class="nav-links">
           <li class="dropdown-nav">
-            <a href="#" id="features"> Features <img src="./images/icon-arrow-down.svg" alt="" /></a>
+            <button aria-haspopup="true" id="features">Features <img src="./images/icon-arrow-down.svg" alt="" /></button>
             <ul class="dropdown-list features-list">
               <li>
                 <img src="./images/icon-todo.svg" alt="" class="icon" />
@@ -40,7 +40,7 @@
             </ul>
           </li>
           <li class="dropdown-nav">
-            <a href="#" id="company"> Company <img src="./images/icon-arrow-down.svg" alt="" /> </a>
+            <button aria-haspopup="true" id="company">Company <img src="./images/icon-arrow-down.svg" alt="" /></button>
             <ul class="dropdown-list company-list">
               <li><a href="#">History</a></li>
               <li><a href="#">Our Team</a></li>
@@ -51,8 +51,8 @@
           <li><a href="#"> About</a></li>
         </ul>
         <div class="nav-btns">
-          <a href="#">Login</a>
-          <a href="#" class="btn-register">Register</a>
+          <button>Login</button>
+          <button class="btn-register">Register</button>
         </div>
       </nav>
     </header>

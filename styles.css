@@ -58,7 +58,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: var(--step-0);
   color: var(--Medium-Gray);
 }
 
@@ -81,10 +80,10 @@ nav {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  background-color: lavenderblush;
   height: 100vh;
   width: 65%;
   padding: var(--space-m);
+  background-color: rgba(211, 211, 211, 0.391);
 }
 
 .nav-links,
@@ -137,9 +136,10 @@ a:hover {
 
 .dropdown-list {
   border-radius: 1rem;
-  background-color: lightblue;
+  background-color: white;
+  border: 1px solid black;
   padding: var(--space-s);
-  font-size: var(--step--1);
+  font-size: var(--step-1);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -148,6 +148,7 @@ a:hover {
 
 .dropdown-list li {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -155,6 +156,7 @@ a:hover {
 #company {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .features-list,
@@ -163,7 +165,12 @@ a:hover {
 }
 
 .dropdown-list.show-dropdown {
-  display: block;
+  display: flex;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--Almost-Black);
+  outline-offset: 5px;
 }
 
 .icon {
@@ -265,7 +272,8 @@ a:hover {
 
   .dropdown-list {
     border-radius: 1rem;
-    background-color: lightblue;
+    background-color: white;
+    border: 1px solid black;
     padding: var(--space-s);
     font-size: var(--step--1);
     display: flex;
@@ -275,18 +283,15 @@ a:hover {
     top: 2.5rem;
   }
 
-  .dropdown-list li {
-    display: flex;
-    gap: 0.5rem;
-  }
-
   .features-list,
   .company-list {
     display: none;
   }
 
-  .dropdown-list.show-dropdown {
-    display: block;
+  .features-list {
+    position: absolute;
+    top: 2.5rem;
+    left: -3rem;
   }
 
   .icon {
