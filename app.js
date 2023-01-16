@@ -32,16 +32,9 @@ dropdownNav.forEach((item) => {
   });
 });
 
-// ROTATE THE DROPDOWN  MENU ICON
-const featuresBtn = document.getElementById("features");
-const featuresArrow = featuresBtn.querySelector("img");
-const companyBtn = document.getElementById("company");
-const companyArrow = companyBtn.querySelector("img");
-
-featuresBtn.addEventListener("click", function () {
-  featuresArrow.classList.toggle("rotate");
-});
-
-companyBtn.addEventListener("click", function () {
-  companyArrow.classList.toggle("rotate");
+// TOGGLES THE ROTATE FOR THE DROPDOWN ARROW
+document.querySelectorAll(".dropdown-btn").forEach(function (button) {
+  button.addEventListener("click", function () {
+    button.classList.toggle("rotate");
+  });
 });
