@@ -13,17 +13,19 @@
     <!-- Header -->
     <header>
       <img src="./images/logo.svg" alt="snap" class="logo" />
-
       <nav>
-        <button id="menu-icon" class="menu-icon" tabindex="0" aria-controls="nav-wrapper" aria-expanded="true" aria-label="Open Navigation">
+        <!-- Open navigation button -->
+        <button id="menu-icon-open" class="menu-icon-open" tabindex="0" aria-controls="nav-wrapper" aria-expanded="true" aria-label="Open Navigation">
           <img src="./images/icon-menu.svg" alt="menu-icon-open" />
         </button>
+
+        <!-- Close navigation button -->
         <button id="menu-icon-close" class="menu-icon-close" tabindex="0" aria-controls="nav-wrapper" aria-expanded="false" aria-label="Close Navigation">
           <img src="./images/icon-close-menu.svg" alt="menu-icon-close" />
         </button>
-
         <div class="nav-wrapper">
           <ul class="nav-links">
+            <!-- Features dropdown navigation -->
             <li class="dropdown-nav">
               <button class="dropdown-btn" id="features">Features</button>
               <ul class="dropdown-list features-list">
@@ -46,6 +48,7 @@
               </ul>
             </li>
 
+            <!-- Company dropdown navigation -->
             <li class="dropdown-nav">
               <button class="dropdown-btn" id="company">Company</button>
               <ul class="dropdown-list company-list">

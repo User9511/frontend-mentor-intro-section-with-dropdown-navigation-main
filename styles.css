@@ -64,7 +64,7 @@ header {
   font-size: var(--step-0);
 }
 
-.menu-icon,
+.menu-icon-open,
 .menu-icon-close {
   position: absolute;
   top: 0;
@@ -74,7 +74,7 @@ header {
   cursor: pointer;
 }
 
-.menu-icon {
+.menu-icon-open {
   display: none;
 }
 
@@ -89,14 +89,9 @@ nav {
 }
 
 .nav-wrapper {
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%; */
-  background-color: rgba(211, 211, 211, 0.191);
-
   height: 100%;
   width: 100%;
+  background-color: rgba(211, 211, 211, 0.191);
 }
 
 .nav-links,
@@ -121,9 +116,6 @@ a:hover {
 .nav-links li {
   display: flex;
   gap: 0.5rem;
-}
-
-.nav-links > li {
   cursor: pointer;
 }
 
@@ -219,20 +211,11 @@ button:focus-visible {
 /* Desktop Layout */
 @media screen and (min-width: 48rem) {
   body {
-    background-color: var(--Almost-White);
-    font-size: 1.125rem;
-    font-family: "Epilogue", sans-serif;
-    max-width: 90rem;
-    margin: 0 auto;
     padding: var(--space-l);
   }
 
   /* Header */
-  .logo {
-    align-self: center;
-  }
-
-  .menu-icon {
+  .menu-icon-open {
     display: none !important;
   }
 
@@ -243,8 +226,6 @@ button:focus-visible {
   header {
     display: flex;
     align-items: center;
-    font-size: var(--step-0);
-    color: var(--Medium-Gray);
   }
 
   nav {
@@ -268,14 +249,6 @@ button:focus-visible {
   .nav-btns {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: end;
-    gap: 1.5rem;
-  }
-
-  .nav-btns {
-    width: auto;
-    margin-top: 0rem;
   }
 
   .nav-links {
@@ -283,14 +256,9 @@ button:focus-visible {
     margin-top: 0rem;
   }
 
-  .nav-links li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .nav-links > li {
-    cursor: pointer;
+  .nav-btns {
+    width: auto;
+    margin-top: 0rem;
   }
 
   .dropdown-nav {
@@ -300,16 +268,10 @@ button:focus-visible {
   }
 
   .dropdown-list {
-    border-radius: 1rem;
-    background-color: white;
-    border: 1px solid black;
-    padding: var(--space-s);
-    font-size: var(--step--1);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     position: absolute;
-    top: 2.5rem;
+    font-size: var(--step--1);
   }
 
   .features-list,
@@ -321,10 +283,5 @@ button:focus-visible {
     position: absolute;
     top: 2.5rem;
     left: -3rem;
-  }
-
-  .icon {
-    width: 1rem;
-    height: 1rem;
   }
 }
