@@ -85,8 +85,18 @@ nav {
   justify-content: start;
   height: 100vh;
   width: 65%;
-  padding: var(--space-m);
+  padding: 0;
+}
+
+.nav-wrapper {
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; */
   background-color: rgba(211, 211, 211, 0.191);
+
+  height: 100%;
+  width: 100%;
 }
 
 .nav-links,
@@ -207,7 +217,7 @@ button:focus-visible {
 }
 
 /* Desktop Layout */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   body {
     background-color: var(--Almost-White);
     font-size: 1.125rem;
@@ -238,13 +248,20 @@ button:focus-visible {
   }
 
   nav {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: inherit;
     padding: inherit;
+  }
+
+  .nav-wrapper {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .nav-links,

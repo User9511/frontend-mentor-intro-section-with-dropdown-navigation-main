@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <!-- <header>
       <img src="./images/logo.svg" alt="snap" class="logo" />
       <img src="./images/icon-menu.svg" alt="menu-icon-open" class="menu-icon" tabindex="0" role="button" />
       <img src="./images/icon-close-menu.svg" alt="menu-icon-close" class="menu-icon-close" tabindex="0" role="button" />
@@ -52,8 +52,62 @@
           <li><a href="#"> About</a></li>
         </ul>
         <div class="nav-btns">
-          <button>Login</button>
-          <button class="btn-register">Register</button>
+          <a href="#"> Login</a>
+          <a href="#" class="btn-register">Register</a>
+        </div>
+      </nav>
+    </header> -->
+
+    <header>
+      <img src="./images/logo.svg" alt="snap" class="logo" />
+
+      <nav>
+        <button onclick="toggleAriaExpanded()" id="menu-icon" class="menu-icon" aria-expanded="true" aria-label="Open menu" tabindex="0">
+          <img src="./images/icon-menu.svg" alt="menu-icon-open" tabindex="0" />
+        </button>
+        <button onclick="toggleAriaExpanded()" id="menu-icon-close" class="menu-icon-close" aria-expanded="false" aria-label="Close menu" tabindex="0">
+          <img src="./images/icon-close-menu.svg" alt="menu-icon-close" tabindex="0" />
+        </button>
+
+        <div class="nav-wrapper">
+          <ul class="nav-links">
+            <li class="dropdown-nav">
+              <button class="dropdown-btn" aria-expanded="false" id="features">Features</button>
+              <ul class="dropdown-list features-list">
+                <li>
+                  <img src="./images/icon-todo.svg" alt="" class="icon" />
+                  <a href="#"> Todo List</a>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="" class="icon" />
+                  <a href="#">Calendar</a>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="" class="icon" />
+                  <a href="#">Reminders</a>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="" class="icon" />
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown-nav">
+              <button class="dropdown-btn" aria-expanded="false" id="company">Company</button>
+              <ul class="dropdown-list company-list">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#"> Careers</a></li>
+            <li><a href="#"> About</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="#"> Login</a>
+            <a href="#" class="btn-register">Register</a>
+          </div>
         </div>
       </nav>
     </header>
