@@ -1,6 +1,6 @@
 const menuIcon = document.querySelector(".menu-icon-open");
 const closeIcon = document.querySelector(".menu-icon-close");
-const navWrapper = document.querySelector(".nav-wrapper");
+const navWrapper = document.getElementById("nav-wrapper");
 const dropdownNav = document.querySelectorAll(".dropdown-nav");
 
 // Add a click event listener to the menu icon
