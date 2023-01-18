@@ -42,5 +42,12 @@ companyDropdownTrigger.addEventListener("click", () => {
     companyDropdownTrigger.setAttribute("aria-expanded", "false");
   }
 });
-
 ``;
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navWrapper.classList.contains("active")) {
+    navWrapper.classList.remove("active");
+    mobileMenuTrigger.classList.remove("active");
+    mobileMenuTrigger.setAttribute("aria-expanded", "false");
+  }
+});
