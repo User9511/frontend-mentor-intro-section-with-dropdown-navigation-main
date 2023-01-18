@@ -4,12 +4,14 @@ const featuresDropdownTrigger = document.getElementById("featuresDropdownTrigger
 const companyDropdownTrigger = document.getElementById("companyDropdownTrigger");
 const featuresList = document.getElementById("features-list");
 const companyList = document.getElementById("company-list");
+const darkOverlay = document.querySelector(".dark-overlay");
 
 // Add a click event listener to the mobile menu trigger button
 mobileMenuTrigger.addEventListener("click", () => {
   // toggle the active class on the nav wrapper and mobile menu trigger button
   navWrapper.classList.toggle("active");
   mobileMenuTrigger.classList.toggle("active");
+  darkOverlay.classList.toggle("active");
 
   // toggle the aria-expanded attribute on the mobile menu trigger button
   if (navWrapper.classList.contains("active")) {

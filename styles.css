@@ -60,6 +60,16 @@ header {
   font-size: var(--step-0);
 }
 
+.dark-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background-color: hsl(0, 0%, 31%);
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -135,6 +145,7 @@ a:hover {
 .nav-links {
   position: relative;
   margin-top: 4rem;
+  padding-left: var(--space-m);
 }
 
 .nav-links li {
@@ -235,6 +246,10 @@ button:focus-visible {
 @media screen and (min-width: 48rem) {
   body {
     padding: var(--space-l);
+  }
+
+  .dark-overlay {
+    display: none;
   }
 
   #mobileMenuTrigger {
