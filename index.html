@@ -10,25 +10,23 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <!-- Header -->
     <header>
+      <!-- logo image -->
       <img src="./images/logo.svg" alt="snap" class="logo" />
+
       <nav>
-        <!-- Open navigation button -->
-        <button id="menu-icon-open" class="menu-icon-open" tabindex="0" aria-controls="nav-wrapper" aria-expanded="true" aria-label="Open Navigation">
-          <img src="./images/icon-menu.svg" alt="menu-icon-open" />
+        <!-- button to trigger mobile menu -->
+        <button id="mobileMenuTrigger" aria-expanded="false" aria-controls="nav-wrapper" title="Open and Close Navigation">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
         </button>
 
-        <!-- Close navigation button -->
-        <button id="menu-icon-close" class="menu-icon-close" tabindex="0" aria-controls="nav-wrapper" aria-expanded="false" aria-label="Close Navigation">
-          <img src="./images/icon-close-menu.svg" alt="menu-icon-close" />
-        </button>
         <div id="nav-wrapper">
           <ul class="nav-links">
-            <!-- Features dropdown navigation -->
             <li class="dropdown-nav">
-              <button class="dropdown-btn" id="features">Features</button>
-              <ul class="dropdown-list features-list">
+              <button class="dropdown-btn" id="featuresDropdownTrigger" aria-expanded="false" aria-controls="features-list">Features</button>
+              <ul class="dropdown-list features-list" id="features-list">
                 <li>
                   <img src="./images/icon-todo.svg" alt="" class="icon" />
                   <a href="#"> Todo List</a>
@@ -48,18 +46,21 @@
               </ul>
             </li>
 
-            <!-- Company dropdown navigation -->
             <li class="dropdown-nav">
-              <button class="dropdown-btn" id="company">Company</button>
-              <ul class="dropdown-list company-list">
+              <button class="dropdown-btn" id="companyDropdownTrigger" aria-expanded="false" aria-controls="company-list">Company</button>
+              <ul class="dropdown-list company-list" id="company-list">
                 <li><a href="#">History</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </li>
+
+            <!-- static menu items -->
             <li><a href="#"> Careers</a></li>
             <li><a href="#"> About</a></li>
           </ul>
+
+          <!-- login and register buttons -->
           <div class="nav-btns">
             <a href="#"> Login</a>
             <a href="#" class="btn-register">Register</a>
