@@ -84,7 +84,6 @@ nav {
   display: none;
   height: 100%;
   width: 100%;
-  background-color: rgba(211, 211, 211, 0.191);
 }
 
 #nav-wrapper.active {
