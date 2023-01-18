@@ -44,6 +44,10 @@ h6 {
   isolation: isolate;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 input,
 button,
 textarea,
