@@ -19,6 +19,13 @@ mobileMenuTrigger.addEventListener("click", () => {
   }
 });
 
+// Toggles the rotate animation for the dropdown arrows
+document.querySelectorAll(".dropdown-btn").forEach(function (button) {
+  button.addEventListener("click", function () {
+    button.classList.toggle("rotate");
+  });
+});
+
 // Add a click event listener to the features dropdown trigger button
 featuresDropdownTrigger.addEventListener("click", () => {
   featuresList.classList.toggle("show-dropdown");
@@ -44,6 +51,7 @@ companyDropdownTrigger.addEventListener("click", () => {
 });
 ``;
 
+// Close the menu when the user presses the escape key
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && navWrapper.classList.contains("active")) {
     navWrapper.classList.remove("active");

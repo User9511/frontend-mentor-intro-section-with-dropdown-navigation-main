@@ -78,6 +78,7 @@ nav {
 
 #nav-wrapper.active {
   display: block;
+  background-color: var(--Almost-White);
 }
 
 #menu-Toggle {
@@ -112,10 +113,10 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 35%;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: -10;
   display: block;
 }
 
@@ -225,7 +226,7 @@ a:hover {
 
 button:focus-visible {
   outline: 3px solid var(--Almost-Black);
-  outline-offset: 5px;
+  outline-offset: 0px;
 }
 
 .icon {
@@ -242,6 +243,43 @@ button:focus-visible {
 .btn-register:hover {
   border: 2px solid var(--Almost-Black);
   color: var(--Almost-Black);
+}
+
+/* Main */
+main {
+  position: absolute;
+  top: 5rem;
+  display: grid;
+  z-index: -100;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  align-items: center;
+}
+
+h1 {
+  font-size: var(--step-6);
+}
+
+p {
+  color: var(--Medium-Gray);
+  font-size: var(--step-0);
+  width: 90%;
+  line-height: 1.7;
+}
+
+.btn-learn-more {
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  padding: 0.75rem;
+  border-radius: 1rem;
+  width: 40%;
 }
 
 @media screen and (min-width: 48rem) {
@@ -317,5 +355,18 @@ button:focus-visible {
     position: absolute;
     top: 2.5rem;
     left: -3rem;
+  }
+
+  button:focus-visible {
+    outline-offset: 5px;
+  }
+
+  /* Main */
+  main {
+    position: absolute;
+    top: 5rem;
+    display: grid;
+    z-index: -100;
+    grid-template-columns: 1fr 1fr;
   }
 }
