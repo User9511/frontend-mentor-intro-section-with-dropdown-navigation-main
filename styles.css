@@ -259,7 +259,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin: 2.5rem 0;
+  margin: 3rem 0;
   align-items: center;
 }
 
@@ -276,10 +276,22 @@ p {
 
 .btn-learn-more {
   background-color: var(--Almost-Black);
+
   color: var(--Almost-White);
   padding: 0.75rem;
   border-radius: 1rem;
-  width: 40%;
+  width: 12rem;
+  cursor: pointer;
+}
+
+.btn-learn-more:hover {
+  background: transparent;
+  border: 2px solid var(--Almost-Black);
+  color: var(--Almost-Black);
+}
+
+h2 {
+  color: pink;
 }
 
 @media screen and (min-width: 48rem) {
