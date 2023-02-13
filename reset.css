@@ -18,10 +18,7 @@ html,
 body {
   height: 100%;
 }
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+
 img,
 picture,
 video,
@@ -29,6 +26,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  max-height: 45rem;
 }
 
 p,
