@@ -301,12 +301,12 @@ p {
 
 /* Client container */
 .client-container {
-  position: absolute;
+  position: relative;
   bottom: 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
 }
 
 /* DESKTOP */
@@ -415,6 +415,15 @@ p {
     align-items: start;
     justify-content: center;
     position: relative;
+  }
+
+  .client-container {
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
   }
 
   span {
