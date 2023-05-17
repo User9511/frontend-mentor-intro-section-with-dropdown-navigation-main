@@ -316,6 +316,7 @@ p {
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  margin-top: 2rem;
 }
 
 /* DESKTOP */
