@@ -224,6 +224,10 @@ a:hover {
   display: none;
 }
 
+.dropdown-list li {
+  margin: 0.2rem 0;
+}
+
 .dropdown-list.show-dropdown {
   display: flex;
 }
@@ -380,9 +384,12 @@ p {
   }
 
   .features-list {
-    position: absolute;
     top: 2.5rem;
-    left: -3rem;
+    left: -2rem;
+  }
+
+  .company-list {
+    right: 9rem;
   }
 
   button:focus-visible {
