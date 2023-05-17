@@ -27,7 +27,7 @@ Users should be able to:
 
 ![](./design/screenshot-desktop.png)
 ![](./design/screenshot-desktop-active.png)
-![](./design/mobile-design.jpg)
+![](./design/screenshot-mobile.png)
 
 ### Links
 
