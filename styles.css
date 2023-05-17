@@ -193,7 +193,7 @@ a:hover {
 .dropdown-list {
   border-radius: 1rem;
   background-color: white;
-  border: 1px solid black;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
   padding: var(--space-s);
   font-size: var(--step-1);
   display: flex;
@@ -240,6 +240,11 @@ button:focus-visible {
 .icon {
   width: 1rem;
   height: 1rem;
+}
+
+.icon-client {
+  /* background-color: blue; */
+  height: 1.1rem;
 }
 
 .btn-register {
@@ -310,7 +315,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 90%;
 }
 
 /* DESKTOP */
@@ -430,7 +435,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
+  }
+
+  .icon-client {
+    height: 1.5rem;
   }
 
   span {
