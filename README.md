@@ -1,19 +1,19 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
+### Links
 
-This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-using-css-grid-and-flexbox-VmwOWm-pAa](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-using-css-grid-and-flexbox-VmwOWm-pAa)
+- Live Site URL: [https://user9511.github.io/frontend-mentor-intro-section-with-dropdown-navigation-main/](https://user9511.github.io/frontend-mentor-intro-section-with-dropdown-navigation-main/)
 
 ## Table of contents
 
-- [Overview](#overview)
+- [Links](#links)
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
-- [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+# Frontend Mentor - Intro section with dropdown navigation solution
 
-## Overview
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -28,11 +28,6 @@ Users should be able to:
 ![](./design/screenshot-desktop.png)
 ![](./design/screenshot-desktop-active.png)
 ![](./design/screenshot-mobile.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://user9511.github.io/frontend-mentor-intro-section-with-dropdown-navigation-main/](https://user9511.github.io/frontend-mentor-intro-section-with-dropdown-navigation-main/)
 
 ### Built with
 
